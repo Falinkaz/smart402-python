@@ -2,8 +2,6 @@
 
 import logging
 
-from x402 import AbortResult
-
 from .client import Smart402Client
 from .models import EvaluateRequest, PaymentRequirementsPayload
 
@@ -118,6 +116,14 @@ def smart402_hook(
     Returns:
         Async hook function to pass to client.on_before_payment_creation().
     """
+    try:
+        from x402 import AbortResult
+    except ImportError:
+        raise ImportError(
+            "x402 is required to use smart402_hook(). "
+            "Install it with: pip install 'smart402[x402]'"
+        ) from None
+
     ss_client = Smart402Client(api_key=api_key, agent_id=agent_id, base_url=smart402_url)
 
     async def hook(ctx):
