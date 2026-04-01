@@ -134,7 +134,7 @@ def smart402_hook(
         amount = _extract_amount_dollars(req)
         token = _extract_token(req)
         if token != "USDC":
-            raise ValueError(f"smart402 v0.1 supports USDC only. Got: {token}")
+            raise ValueError(f"smart402 supports USDC only. Got: {token}")
 
         try:
             eval_request = EvaluateRequest(

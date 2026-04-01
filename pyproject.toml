@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "smart402"
-version = "0.1.0"
+version = "0.4.0"
 description = "Deterministic risk engine for AI agent payments via x402"
 readme = "README.md"
 license = {text = "Apache-2.0"}

@@ -210,7 +210,7 @@ async def test_hook_rejects_non_usdc():
     # Unknown contract address → _extract_token falls back to raw address → not "USDC"
     req = _make_requirements(asset="0xdeadbeef00000000000000000000000000000001")
     ctx = _make_context(req)
-    with pytest.raises(ValueError, match="smart402 v0.1 supports USDC only"):
+    with pytest.raises(ValueError, match="smart402 supports USDC only"):
         await hook(ctx)
 
 

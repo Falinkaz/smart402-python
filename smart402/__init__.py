@@ -3,7 +3,7 @@
 from .client import Smart402Client
 from .guard import Smart402Guard, smart402_hook
 
-__version__ = "0.1.0"
+__version__ = "0.4.0"
 
 __all__ = [
     "smart402_hook",

@@ -71,7 +71,7 @@ class Smart402Client:
 
         Args:
             amount: Dollar decimal string (e.g. "0.10" for $0.10 USDC).
-            token: Token symbol. smart402 v0.1 accepts "USDC" only.
+            token: Token symbol. smart402 accepts "USDC" only.
             network: CAIP-2 network identifier (e.g. "eip155:8453" for Base mainnet).
             pay_to: Recipient wallet address.
 

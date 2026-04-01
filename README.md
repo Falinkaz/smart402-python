@@ -4,7 +4,7 @@ Deterministic policy engine for AI agent payments via [x402](https://x402.org).
 
 No LLM in the decision path. Every approve/deny traces to a rule your team configured — not a model's judgment call. A compromised agent cannot reason or prompt-inject its way past smart402.
 
-> **v0.1:** smart402 currently supports USDC transactions on Base (eip155:8453). Other tokens and chains are on the roadmap.
+> **v0.4.0:** Confirmed on-chain spend tracking. Budgets now reflect payments that actually landed on-chain.
 
 ## Install
 
@@ -169,7 +169,7 @@ if result.decision == "deny":
 
 When using `smart402_hook()`, a denied payment returns `AbortResult` to the x402 client — the payment is not made and no exception is raised to your code. When calling `Smart402Client.evaluate()` directly, check `result.decision` — the client always returns the response, never raises on denial.
 
-`Smart402Denied` and `Smart402Unavailable` are not raised in v0.1.
+`Smart402Denied` and `Smart402Unavailable` are not raised in hook mode.
 
 ## What data leaves your machine
 
@@ -193,7 +193,7 @@ Read the full trust model: [SECURITY.md](https://github.com/Falinkaz/smart402-py
 - Typical latency: 10–50ms (p50), under 200ms (p99)
 - If the API is unreachable, `fail_open` (default) lets the payment proceed. `fail_closed` blocks it.
 - The SDK does not retry on failure — it returns the error immediately, keeping latency predictable and letting you own retry logic.
-- Default request timeout: 5 seconds (not configurable in v0.1)
+- Default request timeout: 5 seconds
 
 ## API Reference
 
