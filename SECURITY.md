@@ -130,7 +130,7 @@ When you use the hosted API at `https://streetsmart-api.fly.dev`:
 
 ## Reporting a vulnerability
 
-**Email: security@smart402.com**
+**Email: security@smart402.com**, or use this repository's [private vulnerability reporting](https://github.com/Falinkaz/smart402-python/security/advisories/new) (Security → Report a vulnerability) — either reaches us; pick whichever you already have open.
 
 Please don't open a public issue for a suspected vulnerability. Include enough to
 reproduce it — what you did, what happened, what you expected. A proof of concept
