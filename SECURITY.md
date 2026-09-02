@@ -152,6 +152,13 @@ Fixes ship in a new patch release of the **latest minor (0.5.x)**. Older version
 don't receive backported fixes: this SDK is pre-1.0 and is evaluated against the
 live API, so upgrading is the supported path.
 
-Full policy, including scope and what is out of scope:
-<https://github.com/Falinkaz/street-smart/blob/main/SECURITY.md> ·
-<https://www.smart402.com/security>
+### Scope
+
+In scope: this SDK, and the smart402 API it calls (`api.smart402.com`).
+
+Out of scope: third-party services smart402 depends on — report those to the
+vendor — and volumetric denial of service; please don't load-test the production
+API. Signups are open, so test against your own account rather than someone
+else's.
+
+Anything not answered here: **security@smart402.com**.
