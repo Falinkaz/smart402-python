@@ -125,3 +125,33 @@ When you use the hosted API at `https://streetsmart-api.fly.dev`:
 2. **Proxy the SDK** — use mitmproxy or Charles and inspect the actual HTTP call.
 3. **Check the request schema** — `models.py` defines exactly what gets serialized.
 4. **Run the tests** — `pytest tests/` — they use mock HTTP and confirm no unexpected calls are made.
+
+---
+
+## Reporting a vulnerability
+
+**Email: security@smart402.com**
+
+Please don't open a public issue for a suspected vulnerability. Include enough to
+reproduce it — what you did, what happened, what you expected. A proof of concept
+helps. If you're unsure whether something counts, send it anyway.
+
+| | |
+|---|---|
+| Acknowledgement | within **3 business days** |
+| Initial assessment | within **10 business days** |
+| Credit | named in the fix notes if you want it, or anonymous |
+
+These are honest targets, not an SLA, and we'll tell you if something is taking
+longer. **There is no bug bounty programme** — we can't pay for reports, and we'd
+rather say so plainly than imply otherwise.
+
+### Supported versions
+
+Fixes ship in a new patch release of the **latest minor (0.5.x)**. Older versions
+don't receive backported fixes: this SDK is pre-1.0 and is evaluated against the
+live API, so upgrading is the supported path.
+
+Full policy, including scope and what is out of scope:
+<https://github.com/Falinkaz/street-smart/blob/main/SECURITY.md> ·
+<https://www.smart402.com/security>
