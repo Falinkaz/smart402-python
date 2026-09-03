@@ -130,7 +130,7 @@ When you use the hosted API at `https://api.smart402.com`:
 
 ## Reporting a vulnerability
 
-**Email: security@smart402.com**, or use this repository's [private vulnerability reporting](https://github.com/Falinkaz/smart402-python/security/advisories/new) (Security → Report a vulnerability) — either reaches us; pick whichever you already have open.
+**Email: security@smart402.com**, or use this repository's [private vulnerability reporting](https://github.com/Falinkaz/smart402-python/security/advisories/new) (Security → Report a vulnerability). Either reaches us; pick whichever you already have open.
 
 Please don't open a public issue for a suspected vulnerability. Include enough to
 reproduce it — what you did, what happened, what you expected. A proof of concept
@@ -143,8 +143,7 @@ helps. If you're unsure whether something counts, send it anyway.
 | Credit | named in the fix notes if you want it, or anonymous |
 
 These are honest targets, not an SLA, and we'll tell you if something is taking
-longer. **There is no bug bounty programme** — we can't pay for reports, and we'd
-rather say so plainly than imply otherwise.
+longer.
 
 ### Supported versions
 
